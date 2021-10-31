@@ -1,27 +1,20 @@
 {
-  "name": "react-s4d",
+  "name": "@devandromeda/react-s4d",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
+    "@craco/craco": "^6.4.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "format": "prettier --write **/*.{js,ts,jsx,tsx,json,html}"
   },
   "browserslist": {
     "production": [
@@ -34,5 +27,28 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@blockly/theme-dark": "^2.0.6",
+    "@blockly/theme-modern": "^2.1.24",
+    "autoprefixer": "^9",
+    "blockly": "^6.20210701.0",
+    "common-tags": "^1.8.0",
+    "js-beautify": "^1.14.0",
+    "postcss": "^7",
+    "prettier": "^2.4.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevAndromeda/react-s4d.git"
+  },
+  "keywords": [
+    "react",
+    "scratch",
+    "discord"
+  ],
+  "author": "DevAndromeda",
+  "license": "MIT"
 }
